@@ -34,7 +34,7 @@ class QueueWithMax
   private 
 
   def update_maxq 
-    
+     
   end 
 
 end
