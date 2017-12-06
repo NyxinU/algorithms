@@ -13,6 +13,8 @@ class Node
   end
 
   def remove
+    @prev.next = @next
+    @next.prev = @prev
     # optional but useful, connects previous node to next node
     # and removes self from list.
   end

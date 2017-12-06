@@ -25,6 +25,7 @@ class QueueWithMax
   end
 
   def max
+    max[0]
   end
 
   def length
@@ -33,8 +34,10 @@ class QueueWithMax
 
   private 
 
-  def update_maxq 
-     
+  def update_maxq(val)
+    if maxq.length == 0 
+      maxq.push(val)
+    end 
   end 
 
 end
