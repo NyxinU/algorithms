@@ -18,7 +18,7 @@ const allFriends = (employees, friendshipsInput) => {
   let relationships = {};
 
   employees.forEach(employee => {
-    relationships[employee.split(',')[0]] = {friends: [], dpt: employee.split(',')[2], otherDptFd: false};
+    relationships[employee.split(',')[0]] = {friends: [], dpt: employee.split(',')[2]};
   });
 
   friendshipsInput.forEach(pair => {
